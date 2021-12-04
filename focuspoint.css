@@ -1,0 +1,40 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+}
+
+#example {
+	background-color: rgba(0,0,0,0.4);
+	border: 2px solid black;
+}
+
+.focus-point {
+	/* default values */
+	--x: 0.5;
+	--y: 0.5;
+	--r: 1.5;
+	--width: 500px;
+	--height: 500px;
+
+	/* default relative position of the focus point */
+	--a: calc(0.5 * var(--width));
+	--b: calc(0.5 * var(--height));
+	--lambda: max(
+		calc(var(--a) / (var(--r) * var(--x))),
+		calc(var(--b) / var(--y)),
+		calc((var(--width) - var(--a)) / (var(--r) * (1 - var(--x)) )),
+		calc((var(--height) - var(--b)) / (1 - var(--y)))
+	);
+	width: calc(var(--lambda) * var(--r));
+	left: calc(var(--a) - var(--lambda) * var(--r) * var(--x));
+	top: calc(var(--b) - var(--lambda) * var(--y));
+	
+	object-fit: cover;
+	position: absolute;
+	height: auto;
+	z-index: -1;
+}

@@ -1,0 +1,71 @@
+\newtheoremstyle{erd-thm}
+{}                % Space above
+{}                % Space below
+{\slshape}        % Theorem body font % (default is "\upshape")
+{}                % Indent amount
+{\bfseries}       % Theorem head font % (default is \mdseries)
+{.}               % Punctuation after theorem head % default: no punctuation
+{0.5em}               % Space after theorem head
+{}                % Theorem head spec
+
+\newtheoremstyle{erd-defn}
+{}                % Space above
+{}                % Space below
+{\upshape}        % Theorem body font % (default is "\upshape")
+{}                % Indent amount
+{\bfseries}       % Theorem head font % (default is \mdseries)
+{.}               % Punctuation after theorem head % default: no punctuation
+{0.5em}               % Space after theorem head
+{}                % Theorem head spec
+
+\newtheoremstyle{erd-rem}
+{}                % Space above
+{}                % Space below
+{\upshape}        % Theorem body font % (default is "\upshape")
+{}                % Indent amount
+{\slshape}       % Theorem head font % (default is \mdseries)
+{.}               % Punctuation after theorem head % default: no punctuation
+{0.5em}  % Space after theorem head
+{}                % Theorem head spec
+
+%\swapnumbers
+\theoremstyle{erd-thm}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{conjecture}[theorem]{Conjecture}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{postulate}[theorem]{Postulate}
+
+\theoremstyle{erd-defn}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{counterexample}[theorem]{Counterexample}
+\newtheorem{exercise}[theorem]{Exercise}
+\newtheorem{opgave}{Opgave}
+
+\theoremstyle{erd-rem}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{claim}[theorem]{Claim}
+\newtheorem{conclusion}[theorem]{Conclusion}
+
+% ------ unnumbered ------
+\theoremstyle{erd-thm}
+\newtheorem*{theorem*}{Theorem}
+\newtheorem*{corollary*}{Corollary}
+\newtheorem*{lemma*}{Lemma}
+\newtheorem*{conjecture*}{Conjecture}
+\newtheorem*{proposition*}{Proposition}
+\newtheorem{postulate*}{Postulate}
+
+\theoremstyle{erd-defn}
+\newtheorem*{definition*}{Definition}
+\newtheorem*{example*}{Example}
+\newtheorem*{counterexample*}{Counterexample}
+\newtheorem*{exercise*}{Exercise}
+
+\theoremstyle{erd-rem}
+\newtheorem*{remark*}{Remark}
+\newtheorem*{claim*}{Claim}
+\newtheorem*{conclusion*}{Conclusion}
