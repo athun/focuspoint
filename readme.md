@@ -4,6 +4,7 @@ If you put a picture as the background of a `<div>` with specified height and wi
 
 For example, which relative `top` and `left` do you need to make it so the bulls-eye of this dartboard
 ![A dartboard.](https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Darts_in_a_dartboard.jpg/640px-Darts_in_a_dartboard.jpg)
+
 is exactly in the middle of some given `<div>`?
 
 ### The solution
